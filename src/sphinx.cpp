@@ -4460,11 +4460,13 @@ bool LoadTokenizerSettings ( CSphReader & tReader, CSphTokenizerSettings & tSett
 		return true;
 
 	tSettings.m_iType = tReader.GetByte ();
+	/*
 	if ( tSettings.m_iType!=TOKENIZER_UTF8 && tSettings.m_iType!=TOKENIZER_NGRAM )
 	{
 		sWarning = "can't load an old index with SBCS tokenizer";
 		return false;
 	}
+	*/
 
 	tSettings.m_sCaseFolding = tReader.GetString ();
 	tSettings.m_iMinWordLen = tReader.GetDword ();

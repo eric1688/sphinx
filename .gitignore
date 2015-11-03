@@ -69,3 +69,9 @@
 .project
 
 .settings/language.settings.xml
+
+*.sublime-project
+
+*.sublime-project
+
+*.sublime-workspace
